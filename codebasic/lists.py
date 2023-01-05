@@ -40,3 +40,43 @@ print(expenses)
 expenses[3]=expenses[3]-200
 print(expenses)
 
+# 1. Length of the list
+# 2. Add 'black panther' at the end of this list
+# 3. You realize that you need to add 'black panther' after 'hulk',
+#    so remove it from the list first and then add it after 'hulk'
+# 4. Now you don't like thor and hulk because they get angry easily :)
+#    So you want to remove thor and hulk from list and replace them with doctor strange (because he is cool).
+#    Do that with one line of code.
+# 5. Sort the heros list in alphabetical order (Hint. Use dir() functions to list down all functions available in list)
+
+heros=['spider man','thor','hulk','iron man','captain america']
+
+print(len(heros))
+heros.append('black panter')
+heros.remove('black panter')
+
+heros.insert(3, 'black panter')
+print(heros)
+
+heros[1:3]=['doctor strange']
+print(heros)
+heros.sort()
+print(heros)
+
+max=int(input("enter a number greater than 1"))
+odd_num=[]
+for i in range(1, max):
+    if i % 2 == 1:
+        odd_num.append(i)
+print(odd_num)
+
+
+# max = int(input("Enter max number: "))
+
+# odd_numbers = []
+
+# for i in range(1, max):
+#     if i % 2 == 1:
+#         odd_numbers.append(i)
+
+# print("Odd numbers: ", odd_numbers)
